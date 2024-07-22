@@ -1,0 +1,35 @@
+.title {
+    width: 15%;
+    /* padding: 12px; */
+    color: white;
+    font-size: 22px;
+    margin-right: 8px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    /* padding: auto; */
+    background-color: darkcyan;
+    border-right: 3px solid white;
+}
+
+.content {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    font-size: 22px;
+    margin-right: 8px;
+    border-radius: 8px;
+    vertical-align: middle;
+    background-color: blue;
+}
+
+.benefits {
+    width: 45%;
+    color: white;
+    font-size: 22px;
+    margin: 8px;
+    border-radius: 8px;
+    vertical-align: middle;
+    background-color: rgb(10, 10, 40);
+    padding: 12px;
+}
