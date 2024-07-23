@@ -5,7 +5,6 @@ const AboutScreen = () => {
     return (
         <div className="col-12 position-static text-white " >
             <section>
-
                 <h2 className="text-white">About us</h2>
                 <p className={styles.content}>LeadX Bull stays current with the market trends aiming not only to thrive but also to enhance in such a rapidly evolving digital age, and to keep up its telemarketing services with the client’s expectations worldwide.</p>
             </section>

@@ -1,15 +1,17 @@
-import { Outlet } from 'react-router-dom';
-import NavBar from '../components/nav_bar/nav_bar';
+import { Outlet, useLocation } from 'react-router-dom';
+import DashboardNavbar from '../components/nav_bar/dashboard_navbar';
+import GuestNavBar from '../components/nav_bar/guest_navbar';
 
 const Layout = () => {
-    return (
+    const location = useLocation();
+    const isDashboardRoute = location.pathname.startsWith('/user/');
 
-        <div className="d-flex flex-column align-items-start bg-dark px-5">
-            <NavBar />
+    return (
+        <div className={`d-flex flex-column align-items-start  px-5 ${isDashboardRoute ? '' : 'bg-dark'}`}>
+            {isDashboardRoute ? <DashboardNavbar /> : <GuestNavBar />}
             <Outlet />
         </div>
-
-    )
-}
+    );
+};
 
 export default Layout;
